@@ -1,3 +1,8 @@
+function zero(x) {
+  if (x < 10) {
+      x = '0' + x;
+  } return x;
+}
 var timCCAM = (document.getElementById("timCCAN").onclick = function () {
   if (timCCAM.cheked) {
     alert("Internal Error !!!");
@@ -10,8 +15,12 @@ var timCCAM = (document.getElementById("timCCAN").onclick = function () {
     var horas = dataTo.getHours(2);
     var minutos = dataTo.getMinutes(2);
     
+    horas = zero(horas);
+    minutos = zero(minutos);
+
     resultado.innerHTML =
       " - Task completed on " + dia + "/" + mes + "/" + ano + " - " + horas + ":" + minutos;
+      
     var resultAlert =
       " Task completed on " + dia + "/" + (mes + 1) + "/" + ano + " - " + horas + ":" +  minutos;
     alert(resultAlert);
@@ -30,6 +39,10 @@ var timREC = (document.getElementById("timREC").onclick = function () {
     var horas = dataTo.getHours(2);
     var minutos = dataTo.getMinutes(2);
     
+    horas = zero(horas);
+    minutos = zero(minutos);
+
+
     resultado.innerHTML =
       " - Task completed on " + dia + "/" + mes + "/" + ano + " - " + horas + ":" + minutos;
     var resultAlert =
@@ -49,6 +62,8 @@ var timAtivo = (document.getElementById("timAtivo").onclick = function () {
     var ano = dataTo.getFullYear();
     var horas = dataTo.getHours(2);
     var minutos = dataTo.getMinutes(2);
+    horas = zero(horas);
+    minutos = zero(minutos);
     
     resultado.innerHTML =
       " - Task completed on " + dia + "/" + mes + "/" + ano + " - " + horas + ":" + minutos;
