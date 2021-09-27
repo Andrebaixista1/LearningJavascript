@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background: #6C7A89; */
+  background-image: linear-gradient(
+    200deg,
+    #ff8aa0 0,
+    #ff908c 5.56%,
+    #ff9779 11.11%,
+    #ffa067 16.67%,
+    #ffa856 22.22%,
+    #ffb146 27.78%,
+    #ffba36 33.33%,
+    #ffc227 38.89%,
+    #ffca19 44.44%,
+    #f8d110 50%,
+    #e5d812 55.56%,
+    #d1dd1e 61.11%,
+    #bce32d 66.67%,
+    #a5e73e 72.22%,
+    #8beb50 77.78%,
+    #6def62 83.33%,
+    #42f175 88.89%,
+    #00f489 94.44%,
+    #00f69e 100%
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+    border-radius: 2ex;
+    padding: 3px;
+    background-color: #c5d4c752;
+    margin: auto;
+    border: 3em;
+    width: 350px;
+    height: 300px;
+    border: 5px solid #9b910f;
+    
+    
+}
+
+h2.teste01 {
+    border: 2em;
+    color: #534f0b;
+    text-align: center;
+}
+
+input.inputCheck {
+    cursor: pointer;
+    position: relative;
+    
+}
+
+h4{
+  display: inline-block;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+}
+div.CheckBox {
+  align-items: center;
+}
+
