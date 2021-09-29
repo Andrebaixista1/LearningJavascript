@@ -1,0 +1,119 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Visitantes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 class="titulo">Formulario de Visitantes Efrata 2021</h2>
+    <div class="container">
+      <form id="formulario">
+        <label class="title">Nome </label>
+        <input class="style1" type="text" name="nomeAs" id="name" placeholder="Digite o nome sem acentos" required />
+        <br />
+        <label class="title">Endereço </label>
+        <input class="style1" type="text" name="enderecoAs" id="endereco" placeholder="Digite o endereço sem acento"/>
+        
+        <br />
+        <label class="title">Contato</label>
+        <input
+          class="style1"
+          type="number"
+          maxlength="11"
+          size="11"
+          name="tel1"
+          id="tel"
+          placeholder="Digite somente o número"
+        />
+        <br />
+        <label class="title">Contato 2</label>
+        <input
+          class="style1"
+          type="number"
+          maxlength="11"
+          size="11"
+          name="tel2"
+          id="tel2"
+          placeholder="Digite somente o número"
+        />
+        <br />
+        <label class="title">Email </label>
+        <input class="style1" type="email" name="emailAs" id="email" placeholder="example@example.com" required />
+        <br />
+        <label class="title">Data de Nascimento </label>
+        <input class="style1" type="date" name="dateAs" id="date" />
+        <br /><br>
+        <fieldset>
+          <label class="title">Frequenta alguma igreja ?</label>
+          <input
+            class="box"
+            type="radio"
+            onclick="frequencia()"
+            name="group"
+            value="Sim"
+          />Sim
+          <input
+            class="box"
+            type="radio"
+            onclick="frequencia()"
+            name="group"
+            value="Não"
+          />Não
+          <input
+            class="box"
+            type="radio"
+            onclick="frequencia()"
+            name="group"
+            value="Já frequentei"
+          />Já frequentei
+        </fieldset>
+        <br />
+        <fieldset>
+          <label class="title">Como nos conheceu ?</label>
+          <input
+            class="box"
+            type="radio"
+            onclick="comoConheceu()"
+            name="group2"
+            value="Redes Sociais"
+          />Redes Sociais
+          <input
+            class="box"
+            type="radio"
+            onclick="comoConheceu()"
+            name="group2"
+            value="Passei na frente"
+          />Passei na frente
+          <input
+            class="box"
+            type="radio"
+            onclick="comoConheceu()"
+            name="group2"
+            value="Algum membro"
+          />Algum membro
+        </fieldset>
+        <br />
+        <label class="title">Data da Visita </label>
+
+        <input
+          type="date"
+          name="dateAs"
+          class="style1"
+          id="dateVisita"
+          required
+        />
+        <br /><br>
+        <button type="submit" onclick="salvar()">Salvar arquivo</button>
+      </form>
+    </div>
+    <script src="./download.js"></script>
+    <script src="./FileSaver.js-master/FileSaver.js-master/dist/FileSaver.min.js"></script>
+
+    <footer>Ficha de Visitantes Efrata 1.7v &copy | Criado e desenvolvido por <a href="https://www.linkedin.com/in/andre-felipepinto01/">André Felipe Pinto</a></footer>
+  </body>
+</html>
